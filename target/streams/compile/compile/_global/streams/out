@@ -1,0 +1,5 @@
+[0m[[0m[33mwarn[0m] [0m[0m/Users/Lisa/Downloads/cspb3155_project1 2/src/main/scala/edu/colorado/cspb3155/project1/StackMachineEmulator.scala:39:9: match may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following inputs: CosI, DivI, ExpI, LogI, MultI, SinI, SubI[0m
+[0m[[0m[33mwarn[0m] [0m[0m        ins match {[0m
+[0m[[0m[33mwarn[0m] [0m[0m        ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
