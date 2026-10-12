@@ -47,10 +47,10 @@ object StackMachineEmulator {
             case PopI => stack match {
                 case (_ :: rest) => (rest, env)
                 case _ => throw new IllegalArgumentException("PopI failed")}
-            case StoreI(s) => stack match {
+            case LoadI(s) => stack match {
                 case (x :: rest) => ((rest, env + (s -> x)))
                 case _  => throw new IllegalArgumentException("StoreI failed")}
-            case LoadI(s) =>
+            case StoreI(s) =>
                 if (env.contains(s)) ((env(s) :: stack), env)
                 else throw new IllegalArgumentException("Value not in environment")
             case MultI => stack match {
